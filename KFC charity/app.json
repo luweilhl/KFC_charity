@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/product/product",
+    "pages/proDetail/proDetail",
+    "pages/step/step",
+    "pages/welfare/welfare",
+    "pages/cart/cart"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff0707",
+    "navigationBarTitleText": "肯德基WOW会员公益",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "color": "#ff0707",
+    "selectedColor": "#333",
+    "backgroundColor": "#eee",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/img/tabs/home.png",
+        "selectedIconPath": "assets/img/tabs/home-active.png",
+        "selectedBackgroundColor": "red"
+      },
+      {
+        "pagePath": "pages/product/product",
+        "text": "爱心商品",
+        "iconPath": "assets/img/tabs/heart.png",
+        "selectedIconPath": "assets/img/tabs/heart-active.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "assets/img/tabs/cart.png",
+        "selectedIconPath": "assets/img/tabs/cart-active.png"
+      },
+      {
+        "pagePath": "pages/welfare/welfare",
+        "text": "我的公益",
+        "iconPath": "assets/img/tabs/profile.png",
+        "selectedIconPath": "assets/img/tabs/profile-active.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}

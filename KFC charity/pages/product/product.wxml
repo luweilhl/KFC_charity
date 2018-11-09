@@ -1,0 +1,41 @@
+<!--pages/product/product.wxml-->
+<view class="header">
+  <view class="head">
+    <image class="img" src="http://127.0.0.1:3009/img/products/background.jpg" mode="aspectFill" lazy-load></image>
+    <view class="txt txt1">
+      <view class="up">我捐了</view>
+      <view class="up up-2">--分钟</view>
+    </view> 
+  </view>
+  <view class="head">
+    <image class="img" src="http://127.0.0.1:3009/img/products/background.jpg" mode="aspectFill" lazy-load></image>
+    <view class="txt txt2">
+      <view class="up">本月已累计捐赠</view>
+      <view class="up up-2">--小时</view>
+    </view>
+  </view>
+  <view class="head">
+    <image class="img" src="http://127.0.0.1:3009/img/products/background.jpg" mode="aspectFill" lazy-load></image>
+    <view class="txt txt3">
+      <view class="up">平台总捐赠</view>
+      <view class="up up-2">--小时</view>
+    </view>
+  </view>
+</view>
+<view class="line"></view>
+<view class="products">
+  <view class="block" wx:for="{{list}}"
+  wx:key="index">
+    <image bindtap="showdetails" data-pid="{{item.pid}}" class="img" src="{{item.img}}" mode="aspectFill" lazy-load></image>
+    <view class="det clear">
+      <view class="little"><text>爱心公益</text></view>
+      <view class="title">{{item.title}}</view>
+      <view class="price clear">
+        <text class="num">{{item.gold}}</text>
+        <image class="gold" src="http://127.0.0.1:3009/img/products/gold.jpg"></image>
+        <text class="num">+{{item.price}}</text>
+        <text class="sign">元</text>
+      </view>
+    </view>
+  </view>
+</view>

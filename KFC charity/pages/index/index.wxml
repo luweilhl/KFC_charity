@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+  <image src="http://127.0.0.1:3009/img/home/title.jpg" mode="aspectFill" lazy-load class="radius img-title-home"></image>
+  <view id="videobox">
+  <video src="http://127.0.0.1:3009/video/potato.mp4" preload="auto" webkit-playsinline="true" playsinline="true"  x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portraint" page-gesture controls class="radius"></video>
+  </view>
+  <navigator hover-class="none" url="/pages/step/step" class="step">
+    <image src="http://127.0.0.1:3009/img/home/three-step.jpg" mode="aspectFill" lazy-load class="radius img-three-home"></image>
+  </navigator> 
+  <image src="http://127.0.0.1:3009/img/home/title-1.jpg" mode="aspectFill" lazy-load class="radius img-subtitle-home"></image>
+  <image bindtap="showDetail" data-pid="{{list[0].pid}}" src="http://127.0.0.1:3009/img/home/1.jpg" mode="aspectFill" lazy-load class="radius img-big-home"></image>
+  <view class="flex-row">
+    <image bindtap="showDetail" data-pid="{{list[3].pid}}" src="http://127.0.0.1:3009/img/home/2.jpg" mode="aspectFill" lazy-load class="radius img-small-home"></image>
+    <image bindtap="showDetail" data-pid="{{list[2].pid}}" src="http://127.0.0.1:3009/img/home/3.jpg" mode="aspectFill" lazy-load class="radius img-small-home"></image>
+    <image bindtap="showDetail" data-pid="{{list[1].pid}}" src="http://127.0.0.1:3009/img/home/4.jpg" mode="aspectFill" lazy-load class="radius img-small-home"></image>
+  </view>
+  <image bindtap="showDetail" data-pid="{{list[3].pid}}" src="http://127.0.0.1:3009/img/home/5.jpg" mode="aspectFill" lazy-load class="radius img-big-home"></image>
+  <image src="http://127.0.0.1:3009/img/home/title-2.jpg" mode="aspectFill" lazy-load class="radius img-subtitle-home img-9"></image>
+  <image bindtap="showDetail" data-pid="{{list[5].pid}}" src="http://127.0.0.1:3009/img/home/6.jpg" mode="aspectFill" lazy-load class="radius img-big-home"></image>
+  <view class="flex-row">
+    <image bindtap="showDetail" data-pid="{{list[5].pid}}" src="http://127.0.0.1:3009/img/home/7.jpg" mode="aspectFill" lazy-load class="radius img-small-home"></image>
+    <image bindtap="showDetail" data-pid="{{list[6].pid}}" src="http://127.0.0.1:3009/img/home/8.jpg" mode="aspectFill" lazy-load class="radius img-small-home"></image>
+    <image bindtap="showDetail" data-pid="{{list[4].pid}}" src="http://127.0.0.1:3009/img/home/9.jpg" mode="aspectFill" lazy-load class="radius img-small-home"></image>
+  </view>
+</view>

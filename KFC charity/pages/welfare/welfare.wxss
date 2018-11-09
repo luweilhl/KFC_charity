@@ -1,0 +1,24 @@
+/* pages/welfare/welfare.wxss */
+.slider,.slider swiper,.slider image{
+  width:100%;
+  height:858rpx;
+}
+.slider{
+  margin-bottom:40rpx;
+}
+.txt{
+  text-align: center;
+  font-size: 16px;
+  color:#666;
+}
+.time{
+  color:#ff0707;
+}
+.share{
+  margin:0 auto;
+  margin-top:30rpx;
+  width:304rpx;
+}
+.btn{
+  color:#fff;
+}

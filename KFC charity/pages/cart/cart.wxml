@@ -1,0 +1,38 @@
+ <block wx:if="{{hasList}}">
+  <view class="cart-box">
+      <!-- wx:for 渲染购物车列表 -->
+      <view class="box" wx:for="{{carts}}" wx:key="index">
+          <!-- wx:if 是否选择显示不同图标 -->
+          <icon wx:if="{{item.selected}}" type="success" color="red" bindtap="selectList" data-index="{{index}}" />
+          <icon wx:else type="circle" bindtap="selectList" data-index="{{index}}"/>
+          <!-- 点击商品图片可跳转到商品详情 -->
+          <navigator class="img" url="../proDetail/proDetail?pid={{item.pid}}">
+              <image class="cart-thumb" src="{{item.img}}"></image>
+          </navigator>
+
+          <text class="title">{{item.title}}</text>
+          <text class="price">￥{{item.price}}</text>
+
+          <!-- 增加减少数量按钮 -->
+          <view class="num">
+              <text bindtap="minusCount" data-index="{{index}}">-</text>
+              <text>{{item.num}}</text>
+              <text bindtap="addCount" data-index="{{index}}">+</text>
+          </view>
+
+          <!-- 删除按钮 -->
+          <text class="del" bindtap="deleteList" data-index="{{index}}" data-delId="{{item.pid}}"> × </text>
+      </view>
+  </view>
+
+  <!-- 底部操作栏 -->
+  <view class="bar">
+      <!-- wx:if 是否全选显示不同图标 -->
+      <icon class="icon" wx:if="{{selectAllStatus}}" type="success_circle" color="#fff" bindtap="selectAll"/>
+      <icon class="icon" wx:else type="circle" color="#fff" bindtap="selectAll"/>
+      <text class="txt">全选</text>
+
+      <!-- 总价 -->
+      <text class="totalPrice">￥{{totalPrice}}</text>
+  </view>
+</block>

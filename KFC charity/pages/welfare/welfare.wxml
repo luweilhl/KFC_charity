@@ -1,0 +1,22 @@
+<!--pages/welfare/welfare.wxml-->
+<view class="slider">
+  <swiper autoplay interval="3500" indicator-dots>  
+    <swiper-item>
+      <image src="http://127.0.0.1:3009/img/welfare/1.jpg" mode="aspectFill" lazy-load></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="http://127.0.0.1:3009/img/welfare/2.jpg" mode="aspectFill" lazy-load></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="http://127.0.0.1:3009/img/welfare/3.jpg" mode="aspectFill" lazy-load></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="http://127.0.0.1:3009/img/welfare/4.jpg" mode="aspectFill" lazy-load></image>
+    </swiper-item>    
+  </swiper>
+</view>
+<view class="txt">芦苇 已经为小候鸟捐了<text class="time">--分钟</text></view>
+<view class="txt">与父母视频通话时间</view>
+<view class="share">
+  <button class="btn" size="mini" type="warn" open-type="share">一键保存分享给好友</button>
+</view>

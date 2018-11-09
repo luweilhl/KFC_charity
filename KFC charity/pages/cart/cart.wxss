@@ -1,0 +1,63 @@
+/* pages/cart/cart.wxss */
+.cart-box{
+  font-size: 16px;
+  margin-top:20rpx;
+  margin-left:20rpx;
+}
+.cart-box .box .img{
+  display: inline-block;
+  vertical-align: top;
+  margin-left:20rpx;
+  margin-right:20rpx; 
+  margin-bottom: 20rpx; 
+}
+.cart-box .box .cart-thumb{
+  width:131rpx;
+  height:130rpx;
+}
+.cart-box .box .title{
+  display: inline-block;
+  width: 340rpx;
+  height: 80rpx;
+}
+.cart-box .box .price{
+  float: right;
+  margin-top:20rpx;
+  margin-right:20rpx;
+}
+.cart-box .box{
+  margin-bottom: 40rpx;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+}
+.cart-box .box .num,.cart-box .del{
+  position: absolute;
+  top: 92rpx;
+  left: 250rpx;
+}
+.box .num text:nth-child(2){
+  display: inline-block;
+  margin-left:50rpx;
+  margin-right:50rpx;
+}
+.cart-box .box .del{
+  left:640rpx;
+}
+.bar{
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #e62a2a;
+  color: #fff;
+  padding-left: 20rpx;
+  padding-right: 40rpx;
+}
+.bar .icon{
+  padding-top: 12rpx;
+}
+.bar .txt{
+  display: inline-block;
+  margin-left: 10rpx;
+}
+.bar .totalPrice{
+  float: right;
+}
