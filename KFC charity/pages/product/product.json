@@ -1,1 +1,6 @@
-{}
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#ff0707",
+  "navigationBarTitleText": "爱心商品",
+  "navigationBarTextStyle": "white"
+}

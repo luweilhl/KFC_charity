@@ -17,7 +17,8 @@
 .share{
   margin:0 auto;
   margin-top:30rpx;
-  width:304rpx;
+  width:324rpx;
+  text-align: center;
 }
 .btn{
   color:#fff;

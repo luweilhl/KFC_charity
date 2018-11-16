@@ -1,4 +1,5 @@
 const express=require("express");
+const router=express.Router();
 const products=require("./routes/products");
 const details=require("./routes/details");
 

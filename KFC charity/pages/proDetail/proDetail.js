@@ -16,7 +16,7 @@ Page({
   onLoad: function (options) {
     var pid=options.pid;
     wx.request({
-      url:"http://127.0.0.1:3009/details",
+      url:"https://kfc.rrcj123.com/details",
       type:"get",
       data: { pid: pid },
       success:(res)=>{

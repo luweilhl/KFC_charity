@@ -18,7 +18,7 @@
     <view class="little"><text>爱心公益</text></view>
     <view class="price">
       <text class="num">{{list[0].gold}}</text>
-      <image class="gold" src="http://127.0.0.1:3009/img/products/gold.jpg"></image>
+      <image class="gold" src="https://kfc.rrcj123.com/img/products/gold.jpg"></image>
       <text class="num">+{{list[0].price}}</text>
       <text class="sign">元</text>
     </view>

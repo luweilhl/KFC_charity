@@ -13,7 +13,7 @@ Page({
    */
   onLoad: function (options) {
     wx.request({
-      url:'http://127.0.0.1:3009/products',
+      url:'https://kfc.rrcj123.com/products',
       type:'get',
       success:(res)=>{
         this.setData({

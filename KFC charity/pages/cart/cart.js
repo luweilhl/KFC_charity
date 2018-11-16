@@ -58,7 +58,7 @@ Page({
         this.data.carts=[];
         for(var i=0;i<arr.length;i++){
           wx.request({
-            url: "http://127.0.0.1:3009/details",
+            url: "https://kfc.rrcj123.com/details",
             data: {
               pid: arr[i]
             },

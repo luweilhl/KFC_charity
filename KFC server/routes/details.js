@@ -6,7 +6,6 @@ router.get("/",(req,res)=>{
 	var sql="SELECT `did`, `pid`, `img`, `title`, `gold`,`price`, `detail`, `num`, `selected` FROM `details` WHERE pid=?";
 	pool.query(sql,[pid],(err,result)=>{
 		if(err) throw err;
-		//obj=result;
 		res.send(result);
 	});
 });
